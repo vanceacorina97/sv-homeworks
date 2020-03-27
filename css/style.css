@@ -1,0 +1,25 @@
+p {
+    padding: 0px;
+    margin: 0px;
+}
+h5 {
+    padding:10px;
+}
+.card {
+    width: 45vh;
+    margin: 10px;
+}
+.card-body{
+    padding: 18px;
+    align-self: center;
+}
+.div-filme{
+    width: 30vh;
+    margin:10px;
+}
+.title{
+    padding:10px;
+}
+.my-container{
+    padding:10px;
+}
