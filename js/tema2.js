@@ -23,7 +23,7 @@ $("#btnChange").on("click", function () {
 });
 
 function transformRONinEUR(value) {
-    return (value / 4.82).toFixed(2);
+    return (value * 0.21).toFixed(2);
 }
 function transformRONinHUF(value) {
     return (value * 75.56).toFixed(2);
