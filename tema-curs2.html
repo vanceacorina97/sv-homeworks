@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SV Homeworks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class='title'>Tema 2</h1>
+    <div class='my-container'>
+        <h5>1. Folosind switch statement transformati urmatoarea suma din 749 RON in EUR, HUF, USD.</h5>
+        <div class="card">
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">RON</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" placeholder="749" id="inputCurrency" value="749" aria-describedby="inputGroup-sizing-default">
+                  </div>
+                  <div class="input-group">
+                    <select class="custom-select" id="selectCurrency">
+                      <option value="1">EUR</option>
+                      <option value="2">HUF</option>
+                      <option value="3">USD</option>
+                    </select>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-primary" type="button" id="btnChange">Change</button>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3" style="margin-top:17px">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Result</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" id="result" disabled>
+                  </div>
+            </div>
+        </div>
+        <h5>2. Scrieti o functie care primeste un parametru si returneaza tipul acestuia.</h5>
+        <p style="padding-left:32px"><i>In consola apeleaza <b>getTypeOfValue(value)</b> si tipul este returnat si afisat in consola.(exemplu in consola)</i></p>
+        <h5>3. Scrieti o functie javascript care accepta ca parametru un string care ia fiecare cuvant in parte si ii extrage prima litera, dupa care concateneaza literele extrase</h5>
+        <p style="padding-left:32px"><i>In consola apeleaza <b>getFirstLetterFromWords(string)</b> si rezultatul este returnat in consola.(exemplu in consola).</i></p>
+        <h5>3. Transformati fiecare valoare din array-ul de mai sus cu functia definita anterior</h5>
+        <p style="padding-left:32px"><i>In consola apeleaza <b>exerciseThree()</b> si rezultatul este returnat in consola.(exemplu in consola)</i></p>
+        <h5>4. Exercitiul 4 si 5 sunt rezolvate si afisate in consola.</h5>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tema2.js"></script>
+</body>
+
+</html>
