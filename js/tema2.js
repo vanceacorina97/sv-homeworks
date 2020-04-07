@@ -1,3 +1,6 @@
+const EUR = 0.21;
+const HUF = 75.56;
+const USD = 0.22;
 const fraze = [
     "Quisque faucibus ipsum id nibh egestas bibendum.",
     "Phasellus tincidunt sapien nec est tempus lacinia.",
@@ -11,25 +14,19 @@ $("#btnChange").on("click", function () {
     let currency = $("#selectCurrency option:selected").val();
     switch (currency) {
         case '1':
-            $("#result").val(transformRONinEUR(value));
+            $("#result").val(transformRONin(value, EUR));
             break;
         case '2':
-            $("#result").val(transformRONinHUF(value));
+            $("#result").val(transformRONin(value, HUF));
             break;
         case '3':
-            $("#result").val(transformRONinUSD(value));
+            $("#result").val(transformRONin(value, USD));
             break;
     }
 });
 
-function transformRONinEUR(value) {
-    return (value * 0.21).toFixed(2);
-}
-function transformRONinHUF(value) {
-    return (value * 75.56).toFixed(2);
-}
-function transformRONinUSD(value) {
-    return (value * 0.22).toFixed(2);
+function transformRONin(value, currency) {
+    return (value * currency).toFixed(2);
 }
 
 function getTypeOfValue(value) {
