@@ -23,3 +23,8 @@ h5 {
 .my-container{
     padding:10px;
 }
+
+#canvas{
+    border: 1px solid;
+    margin: 10px;
+}
